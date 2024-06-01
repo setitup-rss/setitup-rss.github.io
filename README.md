@@ -1,14 +1,14 @@
-# DaXBench: Benchmarking Deformable Object Manipulation with Differentiable Physics
+# "Set It Up!": Functional Object Arrangement with Compositional Generative Models
 
-This is the repository that contains source code for the [DaxBench website](https://DaxBench.github.io).
+This is the repository that contains source code for the [SetItUp website](https://setitup-rss.github.io).
 
 If you find Nerfies useful for your work please cite:
 ```
-@inproceedings{chen2023daxbench,
-      title={DaXBench: Benchmarking Deformable Object Manipulation with Differentiable Physics}, 
-      author={Siwei Chen* and Yiqing Xu* and Cunjun Yu* and Linfeng Li and Xiao Ma and Zhongwen Xu and David Hsu},
-      year={2023},
-      booktitle={ICLR}
+@inproceedings{xu2024set,
+      title={"Set It Up!": Functional Object Arrangement with Compositional Generative Models}, 
+      author={Yiqing Xu and Jiayuan Mao and Yilun Du and Tomas Lozáno-Pérez and Leslie Pack Kaebling and David Hsu},
+      year={2024},
+      booktitle={Robotics: Science and Systems},
 }
 ```
 

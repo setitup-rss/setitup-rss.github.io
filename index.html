@@ -39,6 +39,8 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -124,7 +126,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (to be released)</span>
                   </a>
               </span>
             </div>
@@ -209,30 +211,29 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method Overview</h2>   
         <div class="content has-text-justified">
-          <object data="./static/images/method-overview.svg" type="image/svg+xml" width="100%" height="600px">
+          <object data="./static/images/method-overview.jpg" type="image/jpeg" width="100%" height="600px">
             <!-- Fallback content for browsers that don't support the object tag -->
-            <img src="./static/images/method-overview.svg" alt="Method Overview">
+            <img src="./static/images/method-overview.jpg" alt="Method Overview">
           </object>
-          <p>Overall architecture of SetItUp. Given a novel instruction $\textit{desc}$ and a set of objects $\mathcal{O}$, we first query an LLM to induce an abstract spatial relationship description of the target object arrangements. The input to the LLM also includes a handful of training examples $\mathcal{D}$ and a human-defined task-family sketch. Next, we ground these abstract relationships into object poses by composing a library of diffusion models to generate object poses that simultaneously comply with all proposed spatial relationships.</p>
+          <p>Overall architecture of SetItUp. Given a novel instruction \( \textit{desc} \) and a set of objects \( \mathcal{O} \), we first query an LLM to induce an abstract spatial relationship description of the target object arrangements. The input to the LLM also includes a handful of training examples \( \mathcal{D} \) and a human-defined task-family sketch. Next, we ground these abstract relationships into object poses by composing a library of diffusion models to generate object poses that simultaneously comply with all proposed spatial relationships.</p>
         </div>
       </div>
     </div>
-
 
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">SetItUp can propose the functional object arrangement for three task-families.</h2>
         <div class="columns is-4">
           <div class="column">
-            <img src="./static/images/objects/Liquid.jpg" alt="Liquid">
+            <img src="./static/images/task_family/study_desk.jpg" alt="Liquid">
             <figcaption class="has-text-centered">Study Desks.</figcaption>
           </div>
           <div class="column">
-            <img src="./static/images/objects/Fabric.jpg" alt="Fabric">
+            <img src="./static/images/task_family/dining_table.jpg" alt="Fabric">
             <figcaption class="has-text-centered">Dining Tables.</figcaption>
           </div>
           <div class="column">
-            <img src="./static/images/objects/Elasto-plastic.jpg" alt="Elasto-plastic">
+            <img src="./static/images/task_family/coffee_table.jpg" alt="Elasto-plastic">
             <figcaption class="has-text-centered">Coffee Tables.</figcaption>
           </div>
         </div>
@@ -240,21 +241,20 @@
       </div>
     </div>
 
-    <div class="columns is-centered ">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Visual comparision among SetItUp and the baselines.</h2>
-  
+    
         <div class="columns is-centered">
           <div class="column is-full">
-            <object data="./static/images/all_methods.svg" type="image/svg+xml" width="100%" height="800px">
+            <object data="./static/images/all_methods.jpg" type="image/jpeg" width="100%" height="800px">
               <!-- Fallback content for browsers that don't support the object tag -->
-              <img src="./static/images/all_methods.svg" alt="All Methods Document">
+              <img src="./static/images/all_methods.jpg" alt="All Methods Document">
             </object>
             <figcaption class="has-text-centered">All Methods Comparision</figcaption>
           </div>
         </div>
-        <p>Each task is accompanied by its respective differentiable physics engine and a task-dependent reward function.  
-        </p>
+        <p>Evaluation on the generalization to novel instructions. Details on the seen-unseen splits are provided in the appendix. Our model shows the least amount of performance drop when generalizing to novel instructions.</p>
       </div>
     </div>
 
