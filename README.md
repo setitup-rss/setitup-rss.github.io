@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [SetItUp website](https://setitup-rss.github.io).
 
-If you find Nerfies useful for your work please cite:
+You can cite "Set It Up" as follows:
 ```
 @inproceedings{xu2024set,
       title={"Set It Up!": Functional Object Arrangement with Compositional Generative Models}, 
